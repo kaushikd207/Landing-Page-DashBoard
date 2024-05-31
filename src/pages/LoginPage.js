@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { login } from '../auth';
-
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { login } from "../auth";
+import "./LoginPage.css"
 const LoginPage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (login(username, password)) {
-      navigate('/dashboard');
+      navigate("/dashboard");
     } else {
-      setError('Invalid credentials');
+      setError("Invalid credentials");
     }
   };
 
   return (
-    <div>
+    <div className="loginContainer">
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <input

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getPages, deletePage } from '../data';
+import "./DashboardHome.css"
 
 const DashboardHome = () => {
   const [pages, setPages] = useState([]);
@@ -16,7 +17,7 @@ const DashboardHome = () => {
   };
 
   return (
-    <div>
+    <div className='CardContainer'>
       <h1>Dashboard</h1>
       <Link to="/dashboard/new">
         <button>Create New Landing Page</button>

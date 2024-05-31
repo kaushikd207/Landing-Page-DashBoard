@@ -1,0 +1,24 @@
+form {
+    align-items: center;
+    margin: auto;
+    width: 300px;
+    flex-wrap: wrap;
+    display: flex;
+    height: 356px;
+    justify-content: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 9px;
+}
+input{
+    width: 95%;
+    height: 30px;
+    margin: auto;
+    display: flex;
+}
+p{
+    color: red;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}

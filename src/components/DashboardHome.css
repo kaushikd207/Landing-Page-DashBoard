@@ -1,0 +1,18 @@
+.CardContainer {
+   border-radius: 5px;
+    background: #e1e1e1;
+    padding: 10px;
+}
+li {
+    border-radius: 5px;
+    margin: 10px;
+    height: 200px;
+    /* width: 100px; */
+    background-color: white;
+    padding: 15px;
+    list-style-type: none;
+    border: 1px solid #d9d9d9;
+}
+a{
+    margin: 20px;
+}
